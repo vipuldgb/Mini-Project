@@ -39,7 +39,8 @@ export class UserProfileComponent {
   // }
 
   // Input Decorators
-  @Input({alias:"user-Name" , transform:formatName}) name = "";
+  // @Input({alias:"user-Name" , transform:formatName}) name = "";
+  @Input({alias:"user-Name"}) name = "";
   @Input({transform:booleanAttribute}) isSingle!:boolean;
   @Input({transform:numberAttribute}) salary!:number
 
@@ -47,7 +48,10 @@ export class UserProfileComponent {
   @Output() myEvent = new EventEmitter<{name:string , newSalary:number}>()
 
   sendData() {
-    
+    this.myEvent.emit({
+      name:this.name,
+      newSalary:250000
+    })
     
   }
 }

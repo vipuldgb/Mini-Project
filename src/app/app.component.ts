@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { UserProfileComponent } from './Components/user-profile/user-profile.component';
 import { CommonModule } from '@angular/common';
+import { User } from '../models/user';
 
 
 @Component({
@@ -21,11 +22,14 @@ export class AppComponent {
     {id:5,name:"Yogesh",isSingle:true,salary:40000}
   ]
 
-  receivedMessage : string = "";
+  
 
-  receivedData(val:string)
+  receivedData(val:User)
   {
-     this.receivedMessage = val;
-     console.log(this.receivedMessage)
+     
+    console.log(val)
+    const idx =  this.users.findIndex(user => user.name == val.name)
+    this.users[idx].salary = val.newSalary;
+
   }
 }
