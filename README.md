@@ -59,5 +59,5 @@ Common Structural Directives:
    - Event Binding: The parent component listens for the event and executes a function when the event is emitted.
 
    
-<h1>Hello</h1>
+
 
