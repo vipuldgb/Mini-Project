@@ -60,4 +60,17 @@ Common Structural Directives:
 
    
 
+## Pipes
+ - In Angular, pipes are a feature that allows you to transform data in your templates before displaying it to the user. They take in data as input, process it, and return a transformed version of that data. Pipes are useful for formatting, transforming, or filtering data in a concise and readable manner.
 
+   # Key Features of Pipes:
+    - Transformation: Pipes are primarily used to transform data such as formatting dates, numbers, strings, or applying filters.
+   - Syntax: The pipe operator | is used within the template, followed by the name of the pipe.
+   - Chaining: You can also chain multiple pipes together.
+   - Common Built-in Pipes:
+   - date — Formats dates.
+   - uppercase — Transforms text to uppercase.
+   - lowercase — Transforms text to lowercase.
+   - currency — Formats numbers as currency.
+   - percent — Converts numbers to a percentage format.
+   - titlecase — Capitalizes the first letter of each word.

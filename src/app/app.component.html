@@ -12,6 +12,7 @@
 <main class="main">
 
  <app-user-profile *ngFor = "let user of users" [user-Name]="user.name" [isSingle]="user.isSingle"  [salary]="user.salary" (myEvent)="receivedData($event)"></app-user-profile>
+ <app-decorators [name]="user.name" [age]="user.age" [gender]="user.gender" [salary]="user.salary"  (myEvent2)="receivedData2($event)"></app-decorators>
  
 </main>
 

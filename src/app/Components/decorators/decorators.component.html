@@ -1,0 +1,11 @@
+<div>
+
+    <!-- Pipe and Output  -->
+    <h1>User Details</h1>
+    <h2>Name : {{name | titlecase }}</h2>
+    <h2>age: {{age}}</h2>
+    <h2>gender: {{gender | uppercase}}</h2>
+    <h2>Salary:{{salary | currency:"INR"}}</h2>
+    <h2>Country Code: {{phoneNumber | countryCode}}</h2>
+    <button (click) = "sendData()">Click Me</button>
+</div>
